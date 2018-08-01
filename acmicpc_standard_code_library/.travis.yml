@@ -1,0 +1,15 @@
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - texlive
+      - g++-6
+      - python
+      - clang
+
+install:
+  - pip install cpplint
+
+script:
+  - ./.travis.sh
